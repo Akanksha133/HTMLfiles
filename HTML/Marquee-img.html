@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bicycle image</title>
+</head>
+
+<body>
+    <marquee behavior="alternate" direction="right" style="background-color:green; height: 400px; padding-top: 30px;"
+        onmousemove="this.stop()" onmouseleave="this.start()">
+        <img src="../Images/bicycle-img" height="200" width="200"> Alternate behavior right direction
+    </marquee>
+    <br><br>
+
+    <div style="background-color:pink; height: 500px; width: 100%;">
+        <div style="padding-top: 40px;">
+            <marquee behavior="alternate" direction="right" scrollamount="20px" id="image">
+                <img src="../Images/bicycle-img" hight="200" width="200" alt="bicycle ima">
+            </marquee>
+            <div
+                style="display: flex; justify-content: center; align-items: center; justify-content: space-around; color:black " >
+                <input type="button" value="start" style="padding: 20px;"  onclick="document.getElementById('image').start();" />
+                <input type="button" value="stop"  style="padding: 20px;" onclick="document.getElementById('image').stop();" />
+
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
